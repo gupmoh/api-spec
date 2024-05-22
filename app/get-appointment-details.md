@@ -7,15 +7,16 @@
 ### Endpoint
 ``` {baseurl}/v2/appointment ```
 
+### Headers
+- Authorization: Bearer [Token] - The Bearer token required for authentication.
+
+### Request Body
+
 ```
 {
   "civilId": 64891745
 }
-
 ```
-
-### Headers
-- Authorization: Bearer [Token] - The Bearer token required for authentication.
 
 ### Successful Response
 ``` HTTP Status Code: 200 (OK) ```
