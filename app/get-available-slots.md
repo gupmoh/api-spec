@@ -5,7 +5,7 @@
 - POST
 
 ### Endpoint
-- {baseurl}/nehrapi/gup/getSlots
+``` {baseurl}/getSlots ```
 
 ### Request Body
 ```
