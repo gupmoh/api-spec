@@ -5,7 +5,7 @@
 - POST
 
 ### Endpoint
-- http://10.99.10.55:8066/nehrapi/gup/getSlots
+- {baseurl}/nehrapi/gup/getSlots
 
 ### Request Body
 ```
@@ -80,34 +80,30 @@ HTTP Status Code: 200 (OK)
     - divName (string): Name of the division.
     - divNameNls (string): Localized name of the division.
 #### Error Responses
+
+1. ###  Invalid token/Unauthorized
 - HTTP Status Code: 401 (Unauthorized)
-
 #### Content-Type: application/json
 ##### Body:
 ```
 {
-  "code": 401,
-  "message": "Unauthorized: Access is denied due to invalid credentials."
+    "error": "invalid_token",
+    "error_description": "d0816a77-af67-43fc-bad1-2edb2aae3dc51"
 }
 ```
-HTTP Status Code: 404 (Not Found)
 
+
+2. ### no-record-found
+- HTTP Status Code: 200 (OK)
 #### Content-Type: application/json
 ##### Body:
 ````
 {
-  "code": 404,
-  "message": "No available slots found for the specified parameters."
+    "version": "v2",
+    "code": 4,
+    "message": "No Record Found",
+    "result": null
 }
 ````
-HTTP Status Code: 500 (Internal Server Error)
 
-#### Content-Type: application/json
-Body:
-```
-{
-  "code": 500,
-  "message": "Internal Server Error: Unable to process the request due to server error."
-}
-```
 > This document provides a comprehensive guide for developers to understand and integrate with the API endpoint to fetch available appointment slots for specified clinics.
