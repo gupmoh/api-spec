@@ -24,8 +24,12 @@
 - estCode (string): Establishment code of the clinic.
 - fromDate (string): Start date and time from when the slots are needed (format: YYYY-MM-DD HH:MM:SS).
 - toDate (string): End date and time until when the slots are needed (format: YYYY-MM-DD HH:MM:SS).
-#### - Successful Response
-HTTP Status Code: 200 (OK)
+
+### Headers
+- Authorization: Bearer [Token] - The Bearer token required for authentication.
+### Successful Response
+- HTTP Status Code: 200 (OK)
+- 
 
 #### Content-Type: application/json
 
