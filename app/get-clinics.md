@@ -5,7 +5,8 @@
 - GET
 
 ### Endpoint
-``` http://10.99.10.55:8066/nehrapi/gup/getClinics ```
+``` QA: {baseurl}/nehrapi/gup/getClinics ```
+- eg: ``` {baseurl}/getClinics?estCode=20068 ```
 
 ###  Query Parameters
 - estCode: 20068 - The establishment code for which clinic details are requested.
@@ -76,35 +77,31 @@
   - divName (string): Name of the division.
   - divNameNls (string): Localized name of the division.
   - earliestDate (integer): Earliest available date timestamp.
-### Error Responses
-- HTTP Status Code: 401 (Unauthorized)
+## Error/other Responses
 
+### Invalid est code
+- HTTP Status Code: 200 (OK)
+#### Content-Type: application/json
+##### Body:
+
+```
+{
+    "version": "v2",
+    "code": 3,
+    "message": "Invalid est code",
+    "result": null
+}
+```
+
+### Invalid Tocken
+- HTTP Status Code: 401 (Unauthorized)
 #### Content-Type: application/json
 ##### Body:
 ```
 {
-  "code": 401,
-  "message": "Unauthorized: Access is denied due to invalid credentials."
+    "error": "invalid_token",
+    "error_description": "d0816a77-af67-43fc-bad1-2edb2aa222e3dc5"
 }
 ```
-HTTP Status Code: 404 (Not Found)
 
-Content-Type: application/json
-Body:
-json
-Copy code
-{
-  "code": 404,
-  "message": "No clinics found for the specified establishment code."
-}
-HTTP Status Code: 500 (Internal Server Error)
-
-Content-Type: application/json
-Body:
-json
-Copy code
-{
-  "code": 500,
-  "message": "Internal Server Error: Unable to process the request due to server error."
-}
 This document provides a comprehensive guide for developers to understand and integrate with the API endpoint to fetch details of clinics associated with a specific establishment code.
