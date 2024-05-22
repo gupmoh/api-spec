@@ -36,13 +36,17 @@
             "lastModifiedBy": 20068,
             "lastModifiedAt": 1571120899000,
             "status": "booked",
+            "reasonText": null,
             "start": 1767152700000,
-            "clinicName": "Adult Echo Clinic",
+            "clinicName": "Adult Echo Clinic ",
+            "clinicNameNls": "",
+            "end": null,
             "reservationId": 523067,
             "latitude": 0.0,
             "longitude": 0.0,
             "reschAppYn": "Y",
             "cancelAppYn": "Y",
+            "appType": null,
             "participant": {
                 "id": "3.20068.523067",
                 "actorId": "67.20068.14836",
@@ -52,19 +56,45 @@
             "reasons": [
                 {
                     "reasonId": 12,
-                    "reason": "Unable to get time"
+                    "reason": "Unable to get time",
+                    "reasonNls": null
                 },
                 {
                     "reasonId": 13,
-                    "reason": "Inconvenient"
+                    "reason": "Inconvenient",
+                    "reasonNls": null
+                },
+                {
+                    "reasonId": 14,
+                    "reason": "Sickness",
+                    "reasonNls": null
+                },
+                {
+                    "reasonId": 15,
+                    "reason": "No Transportation",
+                    "reasonNls": null
+                },
+                {
+                    "reasonId": 16,
+                    "reason": "Anxiety about procedures",
+                    "reasonNls": null
+                },
+                {
+                    "reasonId": 17,
+                    "reason": "Illness reduced no health concern",
+                    "reasonNls": null
+                },
+                {
+                    "reasonId": 18,
+                    "reason": "Others",
+                    "reasonNls": null
                 }
-                // Additional reasons are omitted for brevity.
             ],
             "estTypeCode": 106,
+            "estNameNls": "المديرية العامة لتقنية المعلومات",
             "description": "Adult Echo Clinic | 31-Dec-2019 | 07:45",
             "estCode": 20068,
-            "estName": "Directorate General of Information Technology",
-            "estNameNls": "المديرية العامة لتقنية المعلومات"
+            "estName": "Directorate General of Information Technology"
         }
     ]
 }
