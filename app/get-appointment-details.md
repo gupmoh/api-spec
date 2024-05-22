@@ -2,14 +2,17 @@
 > Description: This API fetches the future appointment details for a specified patient based on their civil ID.
 
 ### HTTP Method
-- GET
+- POST
 
 ### Endpoint
 ``` {baseurl}/v2/appointment ```
-``` eg: {baseurl}/v2/appointment?civilId=64891745 ```
 
-### Query Parameters
-``` civilId: 64891745 - The civil ID of the patient. ```
+```
+{
+  "civilId": 64891745
+}
+
+```
 
 ### Headers
 - Authorization: Bearer [Token] - The Bearer token required for authentication.
