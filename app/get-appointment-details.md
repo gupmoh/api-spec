@@ -10,6 +10,10 @@
 
 ### Query Parameters
 ''' civilId: 64891745 - The civil ID of the patient. '''
+
+### Headers
+- Authorization: Bearer [Token] - The Bearer token required for authentication.
+
 ### Successful Response
 ''' HTTP Status Code: 200 (OK) '''
 
