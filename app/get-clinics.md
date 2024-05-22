@@ -5,7 +5,7 @@
 - GET
 
 ### Endpoint
-``` QA: {baseurl}/nehrapi/gup/getClinics ```
+``` QA: {baseurl}/getClinics ```
 - eg: ``` {baseurl}/getClinics?estCode=20068 ```
 
 ###  Query Parameters
