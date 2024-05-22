@@ -1,11 +1,12 @@
 ## API Specification: Get Appointment Details
-> Description: This API fetches appointment details for a specified patient based on their civil ID.
+> Description: This API fetches the future appointment details for a specified patient based on their civil ID.
 
 ### HTTP Method
 - GET
 
 ### Endpoint
-- http://10.99.10.55:8066/nehrapi/gup/v2/appointment
+``` {baseurl}/v2/appointment ```
+``` eg: {baseurl}/v2/appointment?civilId=64891745 ```
 
 ### Query Parameters
 ''' civilId: 64891745 - The civil ID of the patient. '''
@@ -85,35 +86,30 @@
     - estCode (integer): Establishment code.
     - estName (string): Name of the establishment.
     - estNameNls (string): Localized name of the establishment.
-#### Error Responses
-H- TTP Status Code: 401 (Unauthorized)
 
-#### Content-Type: application/json
+### Error/Other Responses
+
+1. #### Invalid Token
+- HTTP Status Code: 401 (Unauthorized)
+##### Content-Type: application/json
 ##### Body:
 ```
 {
-  "code": 401,
-  "message": "Unauthorized: Access is denied due to invalid credentials."
+    "error": "invalid_token",
+    "error_description": "d0816a77-af67-43fc-bad1-2edb2aae3dc51"
 }
 ```
-HTTP Status Code: 404 (Not Found)
 
+2. #### No-record found
+- HTTP Status Code: 200 (OK)
 #### Content-Type: application/json
-##### Body:
+#### Body:
 ```
 {
-  "code": 404,
-  "message": "No appointment found for the given civil ID."
-}
-```
-HTTP Status Code: 500 (Internal Server Error)
-
-#### Content-Type: application/json
-##### Body:
-```
-{
-  "code": 500,
-  "message": "Internal Server Error: Unable to process the request due to server error."
+    "version": "v2",
+    "code": 4,
+    "message": "No Record Found",
+    "result": []
 }
 ```
 > This document provides a comprehensive guide for developers to understand and integrate with the
