@@ -65,25 +65,20 @@
   - estNameNls (string): Localized name of the establishment.
   - newAppYn (string): Indicates if new appointments are available ('Y' for yes).
   - reschAppYn (string): Indicates if rescheduling is available ('Y' for yes).
-### Error Responses
-- HTTP Status Code: 401 (Unauthorized)
 
-### Content-Type: application/json
-Body:
+### Error/Other Responses
+
+### 1. Invalit Token/Unauthorized
+ -  HTTP Status Code: 401 (Unauthorized)
+#### Content-Type: application/json
+#### Body:
 ```
 {
-  "code": 401,
-  "message": "Unauthorized: Access is denied due to invalid credentials."
+    "error": "invalid_token",
+    "error_description": "d0816a77-af67-43fc-bad1-2edb2aae3dc51"
 }
 ```
-HTTP Status Code: 404 (Not Found)
 
-Content-Type: application/json
-Body:
-```
-{
-  "code": 404,
-  "message": "No records found for the given civil ID."
-}
-```
+
+
 > This document serves as a comprehensive guide for developers to understand how to integrate and troubleshoot interactions with this specific API endpoint.
