@@ -5,7 +5,7 @@
 - POST
 
 ### Endpoint
-``` http://10.99.2.26/nehrapi/login/getToken ```
+``` {baseurl}/getUserToken ```
 
 ### Request Body
 ```
@@ -52,37 +52,33 @@
 - code (integer): Status code of the operation.
 - message (string): Description regarding the result.
 - result (object): Contains details about the authentication token and user information.
-- access_token (string): The token used for making authenticated requests.
-- token_type (string): Type of token issued.
-- refresh_token (string): Token used to renew access without re-entering credentials.
-- expires_in (integer): Duration in seconds for which the token is valid.
-- scope (array of strings): Permissions granted with this token.
-- firstLogin (object): Information on whether this is the user's first login.
-- loggedInUser (object): Information about the logged-in user.
-- userDetails (object): Additional details of the user.
-- persCode (string): Personnel code of the user.
-- userIntitutes (array): Institutes associated with the user.
-- civilId (object): Civil ID of the user, if applicable.
-- userMobile (object): Mobile number of the user, if applicable.
-#### Error Responses
-- HTTP Status Code: 401 (Unauthorized)
+  - access_token (string): The token used for making authenticated requests.
+  - token_type (string): Type of token issued.
+  - refresh_token (string): Token used to renew access without re-entering credentials.
+  - expires_in (integer): Duration in seconds for which the token is valid.
+  - scope (array of strings): Permissions granted with this token.
+  - firstLogin (object): Information on whether this is the user's first login.
+  - loggedInUser (object): Information about the logged-in user.
+  - userDetails (object): Additional details of the user.
+  - persCode (string): Personnel code of the user.
+  - userIntitutes (array): Institutes associated with the user.
+  - civilId (object): Civil ID of the user, if applicable.
+  - userMobile (object): Mobile number of the user, if applicable.
 
-### Content-Type: application/json
-#### Body:
+
+### Error/other Responses
+#### unathorized/bad credential
+- HTTP Status Code: 200 (OK)
+##### Content-Type: application/json
+##### Body:
 ```
 {
-  "code": 401,
-  "message": "Unauthorized: Access is denied due to invalid credentials."
+    "version": "v2",
+    "code": 3,
+    "message": "Bad Credentials",
+    "result": null
 }
 ```
-HTTP Status Code: 500 (Internal Server Error)
 
-Content-Type: application/json
-Body:
-```
-{
-  "code": 500,
-  "message": "Internal Server Error: Unable to process the request due to server error."
-}
-```
+
 > This document enables developers to understand and integrate the API endpoint for obtaining an access token necessary for authenticating further API interactions.
