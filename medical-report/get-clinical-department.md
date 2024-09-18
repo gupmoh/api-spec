@@ -1,4 +1,3 @@
-...
 ## API Specification: Get Clinical Departments for a Specific Establishment
 > Description: This API retrieves the list of clinical departments for a given establishment based on its establishment code (estCode).
 
