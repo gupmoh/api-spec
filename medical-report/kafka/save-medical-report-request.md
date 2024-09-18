@@ -9,7 +9,7 @@
     "remarks": "Patient requires a detailed medical report.",
     "mobileNo": "9876543210",
     "reportTypeId": "1",
-    "selfYN":"Y"
+    "selfOrDependant":"S"
   }
 
 ```
@@ -22,4 +22,5 @@
 - reasonId (string): Reason ID for the report request 
 - remarks (string): Additional remarks about the request , upto 150 characters (optional)
 - mobileNo (string): Mobile phone number of the patient.  upto 20 characters (optional)
-- reportTypeId (string): Report type ID 
+- reportTypeId (string): Report type ID
+- selfOrDependant (string): this report for self or dependant
