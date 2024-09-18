@@ -8,8 +8,7 @@
    "patientId": "56465",
    "estCode": "20068",
    "status": "PAID",
-   "paymentRefNo": "xxxxxxx",
-   "bankTransationId": "xxxxxxx"
+   "paymentRefNo": "xxxxxxx"
  }
 
 ```
