@@ -1,0 +1,2 @@
+## Medical Report Request 
+> The Medical Report Request system enables GUP (Government Unified Platform) users to request medical reports from health providers. The process is managed through a series of steps, with each stage updating the application's status. Kafka is used for communication between GUP, MOH (Ministry of Health), and health institutes for processing, approval, payment of the request and produce the Medical Report.
