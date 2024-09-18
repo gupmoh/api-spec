@@ -1,3 +1,7 @@
+# Medical Report Request Submission
+- 	Action: The GUP system submits the report request to MOH for approval.
+- 	Process: GUP posts the request to a Kafka topic for processing.
+
 
  ```
  "payload": {
