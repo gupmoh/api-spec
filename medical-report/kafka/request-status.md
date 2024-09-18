@@ -19,3 +19,15 @@
 }
 
 ```
+### Field Descriptions:
+- applicantCivilId (string): Civil ID of the applicant.
+- beneficiaryCivilId (string): Civil ID of the beneficiary (if applicable).
+- beneficiaryCrNumber (string): Commercial registration number of the beneficiary (if applicable).
+- ministryCode (string): Code representing the ministry
+- serviceCode (string): Code representing the specific service requested
+- applicationReferenceObject (string): Reference object associated with the application
+- applicationNumber (string): Unique application number
+- applicationRedirectLink (string): A link for redirecting the application 
+- applicationStatusCode (string): Status code of the application
+- applicationStatusTimestamp (string): Timestamp of the status update, in ISO format.
+- applicationStatusMessage (string): Message explaining the status.
