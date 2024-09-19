@@ -5,7 +5,7 @@
 - POST
 
 ### Endpoint
- ``` {BASEURL}/v2/getClinicalDepartments ```
+ ``` {BASEURL}/master/ClinicalDepartments ```
 
 ### Headers
 - Authorization: Bearer d0816a77-af67-43fc-bad1-2edb2aae3dc5 - The Bearer token required for authentication.
