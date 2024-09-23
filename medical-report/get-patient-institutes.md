@@ -32,6 +32,7 @@
     "result": [
         {
             "mpiId": 2704847,
+            "civilId": 123434,
             "estCode": "20068",
             "fhirPatientId": "67.20068.54124",
             "estPatientId": 54124,
@@ -40,9 +41,7 @@
             "estShortName": "DGIT",
             "fhirEnabledYn": "N",
             "estTypeCode": 106,
-            "estNameNls": "المديرية العامة لتقنية المعلومات",
-            "newAppYn": "Y",
-            "reschAppYn": "Y"
+            "estNameNls": "المديرية العامة لتقنية المعلومات"
         }
     ]
 }
@@ -63,8 +62,7 @@
   - fhirEnabledYn (string): Indicates if FHIR is enabled ('N' for no).
   - estTypeCode (integer): Establishment type code.
   - estNameNls (string): Localized name of the establishment.
-  - newAppYn (string): Indicates if new appointments are available ('Y' for yes).
-  - reschAppYn (string): Indicates if rescheduling is available ('Y' for yes).
+ 
 
 ### Error/Other Responses
 
