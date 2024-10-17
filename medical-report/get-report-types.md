@@ -5,8 +5,8 @@
 - GET
 
 ### Endpoint
- ``` {BASEURL}/v2/getMedicalReportTypes ```
-
+~``` {BASEURL}/v2/getMedicalReportTypes ```~
+``` {BASEURL}/v2/medicalReportTypes ```
 ### Headers
 - Authorization: Bearer d0816a77-af67-43fc-bad1-2edb2aae3dc5 - The Bearer token required for authentication.
 
