@@ -11,7 +11,7 @@
     "deptCode": "556",
       // "reasonId": "101", // Removed
     "remarks": "Patient requires a detailed medical report.",
-    "mobileNo": "9876543210",
+   //  "mobileNo": "9876543210",  // Removed
     "reportTypeId": "1",
     "reportFor":"SELF"   // 'SELF' or 'DEPENDANT'  - null value will be treated as SELF
   }
@@ -23,8 +23,8 @@
 - patientId (string): Patient ID .
 - estCode (string): Establishment code / Health Insitute Code.
 - deptCode (string): Clinical Department code
-~- reasonId (string): Reason ID for the report request~ 
+- ~reasonId (string): Reason ID for the report request~ 
 - remarks (string): Additional remarks about the request , upto 150 characters (optional)
-- mobileNo (string): Mobile phone number of the patient.  upto 20 characters (optional)
+- ~mobileNo (string): Mobile phone number of the patient.  upto 20 characters (optional)~
 - reportTypeId (string): Report type ID
 - reportFor (string): this report for self or dependant
