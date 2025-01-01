@@ -1,5 +1,5 @@
 ## API Specification: Get Available Slots
-> Description: This API retrieves booked appointment slots for a specified clinic, given the patient's civil ID and the clinic's details.
+> Description: This API retrieves available appointment slots for a specified clinic, given the patient's civil ID and the clinic's details.
 
 ### HTTP Method
 - POST
