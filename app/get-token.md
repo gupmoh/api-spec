@@ -10,8 +10,8 @@
 ### Request Body
 ```
 {
-  "username": "MOH-90008",
-  "password": "Moh@-90008"
+  "username": "xxxx",
+  "password": "xxxx"
 }
 ```
 ### Parameters:
